@@ -1,0 +1,13 @@
+{
+    "scenarioName": "Delay",
+    "requiredScenarioState": "Success",
+    "request": {
+        "method": "GET",
+        "urlPattern": "/api/kafkawithdynamodbdemo/.*"
+    },
+    "response": {
+        "status": 200,
+        "fixedDelayMilliseconds": 3000,
+        "body": "Success"
+    }
+}

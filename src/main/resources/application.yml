@@ -1,0 +1,27 @@
+spring:
+    application:
+        name: kafka-demo
+    data:
+        rest:
+            detection-strategy: annotated
+
+kafka:
+    consumer:
+        # Default to 30 seconds
+        maxPollIntervalMs: 30000
+
+server:
+    port: 9001
+
+kafkademo:
+    id: demo
+    thirdpartyEndpoint: https://kafkademo.com/api/kafkawithdynamodbdemo/
+    outboundTopic : "demo-outbound-topic"
+
+amazon:
+    access:
+        key: foo
+        secret-key: bar
+    region: eu-west-2
+    end-point:
+        url: http://dynamodb/

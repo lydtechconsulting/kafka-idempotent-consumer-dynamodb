@@ -1,0 +1,18 @@
+---
+kafka:
+    bootstrap-servers: kafka:9092
+
+    consumer:
+        # Override to 10 seconds
+        maxPollIntervalMs: 10000
+
+kafkademo:
+    thirdpartyEndpoint: http://wiremock:8080/api/kafkawithdynamodbdemo/
+
+amazon:
+    access:
+        key: key
+        secret-key: secret-key
+    region: eu-west-2
+    end-point:
+        url: http://localstack:4566/
