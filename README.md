@@ -3,6 +3,8 @@
 Spring Boot application demonstrating the Kafka Idempotent Consumer pattern using DynamoDB as the backing store for the
 event deduplication.
 
+This repo accompanies the article [Kafka Idempotent Consumer With DynamoDB](https://medium.com/lydtech-consulting/kafka-idempotent-consumer-with-dynamodb-99f765a99be5).
+
 ## Integration Tests
 
 Run integration tests with `mvn clean test`
